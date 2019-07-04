@@ -1,12 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import 'core-js/stable'
+import React from 'react'
+import { render } from '@gem-mine/durex'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import './config/request'
+import './route'
+import './config/durex'
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+import App from './App'
+import { importAll } from './util/loader'
+
+importAll(require.context('../src', true, /model(\/.+)?\.js$/))
+
+render(<App />, document.querySelector('#root'))
