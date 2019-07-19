@@ -25,7 +25,7 @@ class I18N extends Component {
     if (this.state.initDone) {
       return this.props.children
     } else {
-      return <div>hello</div>
+      return <div />
     }
   }
 }
