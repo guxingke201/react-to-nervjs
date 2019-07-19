@@ -4,9 +4,9 @@ import Footer from './Footer'
 
 export default props => {
   return (
-    <>
+    <div>
       <Routes path="demo.simple" />
       <Footer />
-    </>
+    </div>
   )
 }
