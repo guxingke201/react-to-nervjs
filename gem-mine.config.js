@@ -13,8 +13,8 @@ module.exports = {
     // normal webpack config
     resolve: {
       alias: {
-        // react: 'nervjs',
-        // 'react-dom': 'nervjs'
+        react: 'nervjs',
+        'react-dom': 'nervjs'
       }
     }
   }
