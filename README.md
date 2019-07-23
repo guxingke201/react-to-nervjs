@@ -1,15 +1,5 @@
-# Connected React Router Example
+# 重现步骤
 
-## Install
-```bash
-yarn
-```
-
-## Run
-```bash
-npm run dev
-```
-
-You can try changing counter value and editing some components. Components will be updated while preserving counter state.
-
-In Hello link, you will see that the HelloChild component can access router state (URL path) without passing as props via its parent.
+1. npm i
+1. npm start
+1. 切换路由，内容正常切换，没有异常
